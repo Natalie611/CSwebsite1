@@ -1,0 +1,212 @@
+#showcase{
+
+    
+    background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    height:60vh;/*units of vh for the view height*/
+    padding: 30vh 2% 2% 2%;
+    top:0;
+    
+}
+.d-flex {
+    display:flex;
+}
+section{
+	margin: 0px 20px 0px 20px;
+}
+.center-cols > .col {
+  float:none; /* disable the float */
+  display: inline-block; /* make blocks inline-block */
+  text-align: initial; /* restore text-align to default */
+}
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgba(51,51,51, 0.8);
+    overflow: hidden;
+    /*when the position is fixed the navigation bar stays on the page no matter where you scroll to on the 
+    page but when I do this the nav bar is shrinking to half the size of the page and I am not sure why. 
+    it works when the position is relative though 
+
+    So I was having this problem because i had the max width set to 100%, so I changed the min width to 100%
+    so it will always remain at the top of the page */
+    position: fixed;
+    /*this makes the nav bar stay at the top of the page at all times; 
+    without the nav bar starts a couple of spaces after the top of the page
+    */
+   /* top: 0;*/
+    min-width:100%;
+	z-index: 6;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 8px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+	/* When I hover over the navigation bar, it makes the color of the text black and highlights the box adding transparentcy*/
+    background-color: rgba(221,221,221, 0.5);
+    color: black;
+	
+}
+
+.right{
+
+	float:right;
+	margin-right: 20px;
+}
+
+.aside{
+
+	overflow: auto;
+    float: right;
+    width: 40%;
+	text-align: center;
+	padding: 0px 0px 90px  0px;
+    /*font-family: 'Poppins', sans-serif;*/
+	position: relative;
+	bottom: 50px;
+
+
+
+	/*animation-name: slidein;*/
+}
+
+#aside2{
+	background-color: aqua;
+	overflow: auto;
+    float: right;
+    width: 40%;
+	position: relative;
+	padding: 0px 10px;
+}
+hr {
+    /*display: block;*/
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+   /* margin: 1em 0;*/
+    padding: 0; 
+}
+.myDiv{
+float:left;
+height:800px;
+width:60%;
+margin-top: 10px;
+/*padding: 10vh 2% 2% 2%;*/
+}
+
+.footer{
+	position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(51,51,51);
+    color: white;
+    text-align: center;
+	overflow: hidden;
+	
+}
+/*@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 0%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 50%;
+  }
+}*/
+
+
+/*natalie added code down here ----------------------------------*/
+
+
+.rate {
+    float: center;
+    width: 100%;
+    background-color: none;
+    
+}
+
+
+
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 60%;
+    padding-right: 5px;
+    
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 40%;
+    background-color: none;
+    padding-left: 15px;
+}
+
+
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 05px;
+    box-shadow: 3px 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+button{
+    background-color: #26759e;
+    
+    border-color: #25729A;
+    border-radius: 03px;
+}
+
+a.button {
+    
+    
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+    
+}
+
+button:hover {
+    background-color: rgba(10, 155, 212, 0.699);
+}
